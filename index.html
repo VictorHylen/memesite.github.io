@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title>A fuckin jok</title>
+<h1>Some basic shit</h1>
+<p>HTML buttons are defined with the button tag:</p>
+
+<button onclick="window.location.href='https://w3docs.com';">Hkr page</button>
+
+
+<h3>what is your name?...</h3>
+<audio controls>
+  <source src="My Name Is Jeff Sound Effect.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<h3>I have to take a shit...</h3>
+<audio controls>
+  <source src="okay.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<h3>Much freetime when study computer science...</h3>
+<audio controls>
+  <source src="wtf.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<h3>Kamilla - "Hello wo this?..."</h3>
+<audio controls>
+  <source src="dez nutx.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<h3>U have some green?...</h3>
+<audio controls>
+  <source src="fbi.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<h3>Knock knock...</h3>
+<audio controls>
+  <source src="hello.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+
+
+
+
+
+
+<h2>Inputs:</h2>
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname"><br><br>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname"><br><br>
+
+<h3>image:</h3> 
+
+<img src="OIP.jpg" alt="OIP.com" width="500" height="500">
+
+
+
+<h4>log in</h4>
+<label for="username">Username:</label><br>
+<input type="text" id="username" name="username"><br>
+<label for="pwd">Password:</label><br>
+<input type="password" id="pwd" name="pwd"><br><br>
+
+
+
+
+<button onclick="myFunction()">Click me</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Fuck of";
+}
+</script>
+
+
+
+<script>
+
+var array = new Array();
+
+function insert(val){
+array[array.length]=val;
+}
+
+function show() {
+var string="<b>All Element of the Array :</b><br>";
+for(i = 0; i < array.length; i++) {
+string =string+array[i]+"<br>";
+}
+if(array.length > 0)
+document.getElementById('myDiv').innerHTML = string;
+}
+</script>
+
+</head>
+
+<body>
+<h2>Add to list
+</h2>
+<form name="form1">
+<table width="407">
+<tr>
+<td width="154" align="right"><b>Name</b>
+<td width="9"><b>&nbsp;:</b>
+<td width="224">
+<input type="text" name="name"/>
+</tr>
+<tr>
+<td width="154" align="right">
+<td width="9">
+<td width="224">
+</tr>
+<tr>
+<td width="154" align="right">
+<td width="9">
+<td width="224">
+<input type="button" Value="Add Into Array" 
+onclick="insert(this.form.name.value),show();"/>
+</tr>
+</table>
+</form>
+<div id="myDiv"></div>
+</body>
+</html>
